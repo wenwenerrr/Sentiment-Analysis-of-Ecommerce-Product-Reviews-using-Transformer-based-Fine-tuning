@@ -1,9 +1,4 @@
 
----
-
-### 📄 **requirements.txt**
-
-```text
 transformers>=4.44.0
 accelerate>=0.33.0
 datasets>=3.0.1
