@@ -113,7 +113,7 @@ LORA_HP = {
 }
 
 # Paths
-CSV_PATH = "/content/Womens Clothing E-Commerce Reviews.csv"
+CSV_PATH = "Womens Clothing E-Commerce Reviews.csv"
 RESULTS_DIR = "./results"
 ensure_dir(RESULTS_DIR)
 
@@ -245,7 +245,7 @@ def train_full_finetune(df, hp=FULL_HP):
     # training args
     training_args = TrainingArguments(
         output_dir=os.path.join(RESULTS_DIR, "full_ft"),
-        evaluation_strategy="epoch",
+        eval_strategy="epoch",
         save_strategy="epoch",
         num_train_epochs=hp["num_epochs"],
         per_device_train_batch_size=hp["batch_size"],
@@ -375,7 +375,7 @@ def train_lora(df, hp=LORA_HP):
     # training args
     training_args = TrainingArguments(
         output_dir=os.path.join(RESULTS_DIR, "lora"),
-        evaluation_strategy="epoch",
+        eval_strategy="epoch",
         save_strategy="epoch",
         num_train_epochs=hp["num_epochs"],
         per_device_train_batch_size=hp["batch_size"],
