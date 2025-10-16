@@ -30,5 +30,6 @@ This should create a folder on the left panel, containing all resources from the
 ### 5. Install required packages:
 `!pip install -r requirements.txt`
 ### 6. Run the main script:
-`!python main.py --mode full`
+`!python Main.py`
 
+This should show training and evaluation results of both models, taking ~5 minutes.
