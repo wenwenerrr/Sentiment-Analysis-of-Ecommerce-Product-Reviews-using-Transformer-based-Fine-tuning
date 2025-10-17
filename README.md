@@ -9,10 +9,8 @@ Sentiment-Analysis-of-Ecommerce-Product-Reviews-using-Transformer-based-Fine-tun
 ├── requirements.txt # Required Python packages
 ├── Womens Clothing E-Commerce Reviews.csv # Dataset
 ├── results/ # Folder containing output results
-│ ├── performance_summary.png
-│ ├── confusion_matrix_full.png
-│ ├── confusion_matrix_lora.png
-│ └── runtime_gpu_table.csv
+│ ├── performance per epoch.png
+│ └── runtime_efficiency.png
 └── grid_search.ipynb # Grid search for full-finetuning and LoRA
 ```
 
